@@ -54,6 +54,6 @@
 // let result18 = false && (false || true);
 // console.log(result18);
 
-let result19 = (+null == false) < 1 ** 5;
-console.log(result19);
+// let result19 = (+null == false) < 1 ** 5;
+// console.log(result19);
 
