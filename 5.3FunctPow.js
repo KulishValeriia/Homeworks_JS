@@ -9,5 +9,5 @@ function pow(numb1,numb2){
     return res;
 }
 
-let res = pow(0,6);
+let res = pow(7,4);
 console.log(res);
