@@ -7,7 +7,8 @@ let client = {
       weight: 55 + ' kilograms',
       getInfo: function() {
         for (let x in client) {
-          if (typeof client[x] != 'function') {
+          // if (typeof client[x] != 'function')
+          if (x !== "getInfo") {
             console.log('Client\'s ' + x + ' is ' + client[x]);
           }
         };
@@ -15,7 +16,7 @@ let client = {
   };
   
 
-client.getInfo();
+// client.getInfo();
 
 client.city = "Kyiv";
 client.getInfo();

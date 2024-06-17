@@ -1,18 +1,18 @@
 "use strict"
 
-validation(NaN, true);
-validation(undefined, true);
-validation({}, true);
-validation(true, false); 
-validation(null,false); 
-validation(37,false); 
-validation("55",false); 
-validation("25.52",false);
-validation("",false); 
-validation(" ",false); 
-validation("99,5",true);
-validation(new Date(),false); 
-validation(new Date().toString(), true);
+// validation(NaN, true);
+// validation(undefined, true);
+// validation({}, true);
+// validation(true, false); 
+// validation(null,false); 
+// validation(37,false); 
+// validation("55",false); 
+// validation("25.52",false);
+// validation("",false); 
+// validation(" ",false); 
+// validation("99,5",true);
+// validation(new Date(),false); 
+// validation(new Date().toString(), true);
 
 function validation(input, expected) {
     let res = customIsNaN(input)
@@ -46,3 +46,9 @@ function customIsNaN(value) {
 
     return false; 
 }
+
+//Варіант з лекції
+function isNan(value){
+    return ((+value + '' === 'NaN'))
+}
+console.log(isNan({}));
