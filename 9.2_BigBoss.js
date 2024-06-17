@@ -29,14 +29,6 @@ const company = {
                 type: 'subSubCompany',
                 uses: 'Рішення для продажу квитків',
                 sells: 'Рішення для продажу квитків',
-                partners: [
-                    {
-                      name: 'Клієнт 1.2.3.4',
-                      type: 'subSubsubCompany',
-                      uses: 'Рішення для продажу квитків',
-                      sells: 'Рішення для продажу квитків',
-                    }
-                  ]
               }
             ]
           }
@@ -81,9 +73,6 @@ let companyInfo = findValueByKey(company, 'Клієнт 1.2.3');
 console.log(companyInfo);
 
 companyInfo = findValueByKey(company, 'Клієнт 2');
-console.log(companyInfo);
-
-companyInfo = findValueByKey(company, 'Клієнт 1.2.3.4');
 console.log(companyInfo);
 
 companyInfo = findValueByKey(company, 'Blabla');
